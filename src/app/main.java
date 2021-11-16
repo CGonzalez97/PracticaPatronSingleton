@@ -21,10 +21,7 @@ public class main {
 		//-------------------------------------------------------------------------------------
 		
 		Builder builder = new Builder();
-		builder = builder.nombre("Martín");
-		builder = builder.apellidos("López");
-		builder = builder.dni("34563456C");
-		PersonaToBuild personaToBuild = builder.build();
+		PersonaToBuild personaToBuild = builder.nombre("Martín").apellidos("López").dni("34563456C").build();
 		System.out.println(personaToBuild);
 		
 	}
