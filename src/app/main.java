@@ -1,6 +1,8 @@
 package app;
 
+import app.model.Builder;
 import app.model.Persona;
+import app.model.PersonaToBuild;
 import app.model.Singleton;
 
 public class main {
@@ -15,6 +17,16 @@ public class main {
 		
 		System.out.println(persona1+" "+persona1.getNombre()+" "+persona1.getDni());
 		System.out.println(persona2+" "+persona2.getNombre()+" "+persona2.getDni());
+		
+		//-------------------------------------------------------------------------------------
+		
+		Builder builder = new Builder();
+		builder.build1("Martín");
+		builder.build2("López");
+		builder.build3("34563456C");
+		PersonaToBuild personaToBuild = builder.build();
+		System.out.println(personaToBuild);
+		
 	}
 
 }

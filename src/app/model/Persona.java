@@ -8,11 +8,12 @@ public class Persona {
 	public Persona() {
 		super();
 	}
+	
 	public Persona(String nombre, String dni) {
-		super();
 		this.nombre = nombre;
 		this.dni = dni;
 	}
+
 	public String getNombre() {
 		return nombre;
 	}
@@ -25,8 +26,6 @@ public class Persona {
 	public void setDni(String dni) {
 		this.dni = dni;
 	}
-	
-	
 	
 
 }
